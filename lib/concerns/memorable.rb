@@ -4,7 +4,7 @@ module Memorable
       self.all.clear
     end
 
-    def count #can count how many artists have been created
+    def count #can count how many artists/songs have been created
       self.all.count
     end
 end
