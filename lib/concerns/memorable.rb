@@ -1,10 +1,17 @@
 module Memorable
-
-  def reset_all #can reset the artists/song that have been created
+  module ClassMethods
+    def reset_all
       self.all.clear
     end
-
-    def count #can count how many artists/songs have been created
+ 
+    def count
       self.all.count
     end
+  end
+ 
+  module InstanceMethods
+    def initialize
+      self.class.all << self
+    end
+  end
 end
