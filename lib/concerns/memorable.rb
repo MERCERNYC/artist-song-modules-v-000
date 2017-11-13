@@ -1,2 +1,2 @@
-module memorable
-end 
+module Memorable
+end
